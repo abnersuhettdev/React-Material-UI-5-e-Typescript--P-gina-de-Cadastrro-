@@ -1,5 +1,17 @@
-function App() {
-  return <h1> Hello World </h1>;
-}
+import { BrowserRouter } from "react-router-dom";
 
-export default App;
+import { AppThemeProvider } from "./shared/contexts";
+import { MenuLateral } from "./shared/components";
+import { AppRoutes } from "./routes";
+
+export const App = () => {
+  return (
+    <AppThemeProvider>
+      <BrowserRouter>
+        <MenuLateral>
+          <AppRoutes />
+        </MenuLateral>
+      </BrowserRouter>
+    </AppThemeProvider>
+  );
+};
