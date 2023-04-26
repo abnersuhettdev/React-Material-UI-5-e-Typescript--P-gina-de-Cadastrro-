@@ -6,11 +6,9 @@ import { LayoutBaseDePagina } from "../../shared/layouts/";
 
 export const Dashboard = () => {
   return (
-    <LayoutBaseDePagina
+    <LayoutBaseDePagina 
       titulo="Pagina Inicial"
-      barraDeFerramentas={
-        <FerramentasDeDetalhe mostrarBotaoSalvarEFecharCarregando />
-      }
+      barraDeFerramentas={<FerramentasDeDetalhe mostrarBotaoSalvarEFechar  />}
     >
       Testando
     </LayoutBaseDePagina>
